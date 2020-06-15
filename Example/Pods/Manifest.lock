@@ -1,0 +1,16 @@
+PODS:
+  - mfNotification (0.1.0)
+
+DEPENDENCIES:
+  - mfNotification (from `../`)
+
+EXTERNAL SOURCES:
+  mfNotification:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  mfNotification: 4e233211a1b979fa9f5dff12f1ed6a93c11649db
+
+PODFILE CHECKSUM: b1a0a374603b5fdc9ac97879aeec5fa965099609
+
+COCOAPODS: 1.9.3

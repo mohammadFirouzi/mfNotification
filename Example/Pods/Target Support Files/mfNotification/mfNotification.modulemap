@@ -1,0 +1,6 @@
+framework module mfNotification {
+  umbrella header "mfNotification-umbrella.h"
+
+  export *
+  module * { export * }
+}

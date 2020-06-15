@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		07B8A2446D53C854CEC35FE0 /* Pods_mfNotification_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mfNotification_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24BD4A50C348ECB8227AF043 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		24BD4A50C348ECB8227AF043 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		26E89A0575408B13C44FDF9C /* Pods-mfNotification_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mfNotification_Tests.debug.xcconfig"; path = "Target Support Files/Pods-mfNotification_Tests/Pods-mfNotification_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* mfNotification_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mfNotification_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,11 +42,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		AA5D24F9144142CCFBC070B2 /* Pods-mfNotification_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mfNotification_Tests.release.xcconfig"; path = "Target Support Files/Pods-mfNotification_Tests/Pods-mfNotification_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BC272FDF7E35A81FE124E238 /* mfNotification.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = mfNotification.podspec; path = ../mfNotification.podspec; sourceTree = "<group>"; };
+		BC272FDF7E35A81FE124E238 /* mfNotification.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = mfNotification.podspec; path = ../mfNotification.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC2CAE9DA4372B72E02C4666 /* Pods_mfNotification_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mfNotification_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE316CDDB694D48DB9ADFD1B /* Pods-mfNotification_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mfNotification_Example.debug.xcconfig"; path = "Target Support Files/Pods-mfNotification_Example/Pods-mfNotification_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D82E565FDEDB1007139A743D /* Pods-mfNotification_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mfNotification_Example.release.xcconfig"; path = "Target Support Files/Pods-mfNotification_Example/Pods-mfNotification_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E3BAFF95442328C92602C022 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E3BAFF95442328C92602C022 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				26E89A0575408B13C44FDF9C /* Pods-mfNotification_Tests.debug.xcconfig */,
 				AA5D24F9144142CCFBC070B2 /* Pods-mfNotification_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -419,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
