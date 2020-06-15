@@ -5,7 +5,9 @@
 [![Platform](https://img.shields.io/cocoapods/p/mfNotification.svg?style=flat)](https://cocoapods.org/pods/mfNotification)
 
 
-<img src="https://s7.gifyu.com/images/ScreenShot.png" width="60%" />
+<p align="center">
+  <img src="https://s7.gifyu.com/images/ScreenShot.png" width="60%" />
+</p>
 
 ## Description
 
