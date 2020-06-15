@@ -6,8 +6,9 @@
 
 
 <p align="center">
-  <img src="https://s7.gifyu.com/images/ScreenShot.png" width="60%" />
+  <img src="https://s7.gifyu.com/images/Screen17403.png" width="50%" />
 </p>
+
 
 ## Description
 
