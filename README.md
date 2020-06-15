@@ -4,6 +4,9 @@
 [![License](https://img.shields.io/cocoapods/l/mfNotification.svg?style=flat)](https://cocoapods.org/pods/mfNotification)
 [![Platform](https://img.shields.io/cocoapods/p/mfNotification.svg?style=flat)](https://cocoapods.org/pods/mfNotification)
 
+
+<img src="https://s7.gifyu.com/images/ScreenShot.png" width="40%" />
+
 ## Description
 
 mfNotification is an in-app notification view that allows you to easily display notification anywhere on your app.
