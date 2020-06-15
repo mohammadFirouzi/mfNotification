@@ -13,7 +13,7 @@ public class mfNotification {
     
     //MARK:-
     //note : UIApplication.shared.keyWindow is deprecated in ios 13, so use -> UIApplication.shared.windows.filter {$0.isKeyWindow}.first!
-    private let notificationView = Bundle(identifier: "org.cocoapods.demo.mfNotification-Example")!.loadNibNamed("mfNotificationCore", owner: nil, options: [:])![0] as! mfNotificationCore
+    private let notificationView = Bundle(identifier: "org.cocoapods.mfNotification")!.loadNibNamed("mfNotificationCore", owner: nil, options: [:])![0] as! mfNotificationCore
     //private let notificationView = Bundle.main.loadNibNamed("mfNotificationCore", owner: nil, options: [:])![0] as! mfNotificationCore
     private let keyWindows = UIApplication.shared.windows.filter {$0.isKeyWindow}.first!
     private var topSafeArea: CGFloat {
