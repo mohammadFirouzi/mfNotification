@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 mfNotification is an in-app notification view that allows you to easily display notification anywhere on your app.
                        DESC
 
-  s.homepage         = 'https://github.com/Mohammad Firouzi/mfNotification'
+  s.homepage         = 'https://github.com/MohammadFirouzi/mfNotification'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mohammad Firouzi' => 'mohammad.spz@icloud.com' }
-  s.source           = { :git => 'https://github.com/Mohammad Firouzi/mfNotification.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/MohammadFirouzi/mfNotification.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
