@@ -8,13 +8,13 @@
 
 import Foundation
 import UIKit
+import AudioToolbox
 
 public class mfNotification {
     
     //MARK:-
     //note : UIApplication.shared.keyWindow is deprecated in ios 13, so use -> UIApplication.shared.windows.filter {$0.isKeyWindow}.first!
-    private let notificationView = Bundle(identifier: "org.cocoapods.mfNotification")!.loadNibNamed("mfNotificationCore", owner: nil, options: [:])![0] as! mfNotificationCore
-    //private let notificationView = Bundle.main.loadNibNamed("mfNotificationCore", owner: nil, options: [:])![0] as! mfNotificationCore
+    private let notificationView = Bundle(for: mfNotification.self).loadNibNamed("mfNotificationCore", owner: nil, options: [:])![0] as! mfNotificationCore
     private let keyWindows = UIApplication.shared.windows.filter {$0.isKeyWindow}.first!
     private var topSafeArea: CGFloat {
         if #available(iOS 11.0, *) {
@@ -32,7 +32,7 @@ public class mfNotification {
     public weak var delegate: mfNotificationDelegate? = nil
     public var attributes = mfNotificationAttributes()
     public var duration = TimeInterval(3.0)
-    
+    public var soundAlert = false
     
     //MARK:- init
     public init() {
@@ -77,19 +77,29 @@ public class mfNotification {
             self.keyWindows.layoutIfNeeded()
         }, completion: nil)
         
+        if soundAlert {
+            AudioServicesPlayAlertSound(1105)
+        }
+        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration) {
             self.dismiss()
         }
+        
     }
     
     
     //MARK:- dismiss
     @objc private func dismiss(){
+        if self.notificationView.superview == nil {
+            return
+        }
+        delegate?.mfNotificationWillDismiss()
         UIView.animate(withDuration: 0.25, animations: {
             self.cnsTop.constant = -1 * (self.notificationView.frame.height + 10)
             self.keyWindows.layoutIfNeeded()
         }) { (success) in
             self.notificationView.removeFromSuperview()
+            self.delegate?.mfNotificationDidDismiss()
         }
     }
     
@@ -100,11 +110,20 @@ public class mfNotification {
     }
     
     @objc private func tapped(){
-        delegate?.notificationClicked(info: self.info)
+        delegate?.mfNotificationClicked(info: self.info)
+        dismiss()
     }
         
 }
 
 public protocol mfNotificationDelegate: class {
-    func notificationClicked(info: Any?)
+    func mfNotificationClicked(info: Any?)
+    func mfNotificationWillDismiss()
+    func mfNotificationDidDismiss()
+}
+
+public extension mfNotificationDelegate {
+    func mfNotificationClicked(info: Any?){}
+    func mfNotificationWillDismiss(){}
+    func mfNotificationDidDismiss(){}
 }

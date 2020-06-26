@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mfNotification'
-  s.version          = '0.2.0'
+  s.version          = '1.0.3'
   s.summary          = 'InApp notification banner.'
 
 # This description is used to generate tags and improve search results.
@@ -37,6 +37,6 @@ mfNotification is an in-app notification view that allows you to easily display 
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'Foundation'
+  s.frameworks = 'UIKit', 'Foundation', 'AudioToolbox'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
