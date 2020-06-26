@@ -70,6 +70,7 @@ class ViewController: UIViewController {
         //turn on/off soundAlert
         notification.soundAlert = true
         
+        //present notification
         notification.present(title: "Title", text: "This is Text", avatar: UIImage(named: "Image"), info: "This is info")
     }
 }
