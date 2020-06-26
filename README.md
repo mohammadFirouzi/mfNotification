@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         notification.delegate = self
         
         //set custom duration
-        notification.duration = 8.0
+        notification.duration = 4.0
         
         //turn on/off soundAlert
         notification.soundAlert = true
