@@ -64,16 +64,27 @@ class ViewController: UIViewController {
         //set delegate
         notification.delegate = self
         
-        //set duration
+        //set custom duration
         notification.duration = 8.0
+        
+        //turn on/off soundAlert
+        notification.soundAlert = true
         
         notification.present(title: "Title", text: "This is Text", avatar: UIImage(named: "Image"), info: "This is info")
     }
 }
 
 extension ViewController: mfNotificationDelegate {
-    func notificationClicked(info: Any?) {
+    func mfNotificationClicked(info: Any?) {
         print(info)
+    }
+    
+    func mfNotificationWillDismiss() {
+        
+    }
+    
+    func mfNotificationDidDismiss() {
+        
     }
 }
 ```
