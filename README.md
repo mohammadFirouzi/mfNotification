@@ -6,7 +6,7 @@
 
 
 <p align="center">
-  <img src="https://s7.gifyu.com/images/Screen17403.png" width="50%" />
+  <img src="https://s7.gifyu.com/images/mfNotification720.gif" width="30%" />
 </p>
 
 
