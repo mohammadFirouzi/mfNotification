@@ -25,6 +25,7 @@ public class mfNotification {
     }
     private var cnsTop = NSLayoutConstraint()
     private var presented = false
+    private var dismissed = false
     private var info: Any?
     
     
@@ -90,10 +91,12 @@ public class mfNotification {
     
     //MARK:- dismiss
     @objc private func dismiss(){
-        if self.notificationView.superview == nil {
+        if self.notificationView.superview == nil || dismissed {
             return
         }
+        dismissed = true
         delegate?.mfNotificationWillDismiss()
+        
         UIView.animate(withDuration: 0.25, animations: {
             self.cnsTop.constant = -1 * (self.notificationView.frame.height + 10)
             self.keyWindows.layoutIfNeeded()
