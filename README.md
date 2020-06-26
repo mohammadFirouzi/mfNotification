@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    @IBAction func btnPressed(_ sender: Any) {
+    @IBAction func simulatePressed(_ sender: Any) {
         let notification = mfNotification()
         notification.present(title: "Title", text: "This is Text")
     }
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    @IBAction func btnPressed(_ sender: Any) {
+    @IBAction func simulatePressed(_ sender: Any) {
         let notification = mfNotification()
         
         //set attributes
